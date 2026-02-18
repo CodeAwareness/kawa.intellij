@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4dbde8"/>
+      <stop offset="100%" stop-color="#2a9fd6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield outline -->
+  <path d="M20 2 C12 2, 5 4, 4 6 L4 18 C4 28, 12 35, 20 38 C28 35, 36 28, 36 18 L36 6 C35 4, 28 2, 20 2 Z"
+        fill="#2b2b2b" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Upper wave -->
+  <path d="M8 14 C10 14, 11 11, 14 11 C17 11, 17 17, 20 17 C23 17, 23 14, 28 14"
+        fill="none" stroke="#4dbde8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Lower wave -->
+  <path d="M8 22 C10 22, 11 19, 14 19 C17 19, 17 25, 20 25 C23 25, 23 22, 28 22"
+        fill="none" stroke="#4dbde8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Top wave extension line -->
+  <line x1="20" y1="17" x2="32" y2="17" stroke="#4dbde8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Bottom wave extension line -->
+  <line x1="20" y1="25" x2="32" y2="25" stroke="#4dbde8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top red bar -->
+  <rect x="22" y="10" width="10" height="2.5" rx="1.25" fill="#e85050"/>
+
+  <!-- Three red dots -->
+  <circle cx="22.5" cy="21" r="1.5" fill="#e85050"/>
+  <circle cx="26.5" cy="21" r="1.5" fill="#e85050"/>
+  <circle cx="30.5" cy="21" r="1.5" fill="#e85050"/>
+
+  <!-- Bottom red bar -->
+  <rect x="22" y="28" width="10" height="2.5" rx="1.25" fill="#e85050"/>
+</svg>

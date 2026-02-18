@@ -1,0 +1,31 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+
+# Build outputs
+*.jar
+*.war
+*.ear
+
+# Keep Gradle wrapper jar (must come after *.jar)
+!gradle/wrapper/gradle-wrapper.jar
+
+# Temp/scratch files
+tmp-*.gradle
+wrapper.gradle
+test_github_connector.txt
+
+# macOS
+.DS_Store
+
+# Test outputs
+test-results/
+test-reports/
