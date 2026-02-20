@@ -1,11 +1,11 @@
-Kawa Code extension for PyCharm
-====================================
+Kawa Code extension for IntelliJ IDEs
+=====================================
 
-> Real-time team collaboration for PyCharm developers
+> Real-time team collaboration for IntelliJ editors: IDEA, PyCharm, etc
 
 ## Overview
 
-The **Kawa Code PyCharm Plugin** brings real-time collaborative coding features to JetBrains PyCharm, enabling developers to see code intersections, conflicts, and overlaps with teammates before committing changes.
+The **Kawa Code PyCharm Plugin** brings real-time collaborative coding features to JetBrains IDEs, enabling developers to see code intersections, conflicts, and overlaps with teammates before committing changes.
 
 This plugin is part of the Kawa Code suite, which includes extensions for:
 - **Emacs** ([kawa.emacs](https://github.com/CodeAwareness/kawa.emacs))
@@ -83,8 +83,8 @@ Getting Started
 For Developers
 Clone the repository
 
-git clone https://github.com/CodeAwareness/kawa.pycharm.git
-cd kawa.pycharm
+git clone https://github.com/CodeAwareness/kawa.intellij.git
+cd kawa.intellij
 Review the architecture
 
 # Read the architecture overview
@@ -126,10 +126,8 @@ kawa.emacs - Kawa Code for Emacs
 kawa.vscode - Kawa Code for VS Code
 Kawa Code Backend - Core service (proprietary)
 Project Structure
-kawa.pycharm/
+kawa.intellij/
 ├── README.md                    # This file
-├── ARCHITECTURE.md              # Architecture overview
-├── IMPLEMENTATION_PLAN.md       # Implementation plan
 ├── build.gradle.kts             # Coming soon
 ├── src/
 │   ├── main/
@@ -145,8 +143,7 @@ Read the architecture and implementation plan
 Follow the coding standards (see DEVELOPER_GUIDE.md - coming soon)
 Write tests for new features
 Submit pull requests with clear descriptions
-License
-[TBD - To be determined based on project requirements]
+License: MIT
 
 Support
 For issues, questions, or feature requests:
