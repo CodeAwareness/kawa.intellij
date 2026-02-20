@@ -28,7 +28,7 @@ configurations.all {
 // Configure Gradle IntelliJ Plugin
 intellij {
     version.set("2023.3.3")
-    type.set("PC") // PyCharm Community Edition (use "PY" for Professional)
+    type.set("IC") // IntelliJ IDEA Community Edition (use "PC" for PyCharm Community, "PY" for PyCharm Professional)
     plugins.set(listOf())
 }
 

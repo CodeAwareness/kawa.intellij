@@ -121,7 +121,7 @@ public final class CodeAwarenessApplicationService implements Disposable {
             Logger.info("Successfully connected to Kawa Code backend (CAW: " + clientGuid + ")");
 
         } catch (Exception e) {
-            Logger.error("Failed to connect to Kawa Code backend", e);
+            Logger.warn("Could not connect to Kawa Code backend (Muninn not running?): " + e.getMessage());
             // Clean up on failure
             disconnect();
             throw new RuntimeException("Failed to connect to Kawa Code", e);

@@ -103,7 +103,7 @@ public class SocketManager {
 
         // All attempts failed
         String message = "Failed to connect after " + maxAttempts + " attempts to: " + socketPath;
-        Logger.error(message + " (last error: " + (lastException != null ? lastException.getMessage() : "unknown") + ")");
+        Logger.warn(message + " (last error: " + (lastException != null ? lastException.getMessage() : "unknown") + ")");
         throw new IOException(message, lastException);
     }
 

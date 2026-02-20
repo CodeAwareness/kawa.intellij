@@ -43,7 +43,7 @@ public class CatalogConnection {
             Logger.info("Successfully connected to Muninn (assigned CAW: " + assignedCaw + ")");
         } catch (IOException e) {
             connected = false;
-            Logger.error("Failed to connect to Muninn at: " + muninnPath, e);
+            Logger.warn("Muninn not available at: " + muninnPath + " (" + e.getMessage() + ")");
             throw e;
         }
     }

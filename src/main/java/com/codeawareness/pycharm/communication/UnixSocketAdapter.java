@@ -50,8 +50,7 @@ public class UnixSocketAdapter implements SocketAdapter {
 
             Logger.info("Connected to Unix socket: " + socketPath + " (connected: " + connected + ")");
         } catch (IOException e) {
-            Logger.error("Failed to connect to Unix socket: " + socketPath, e);
-            Logger.error("Socket connection error details: " + e.getClass().getName() + ": " + e.getMessage());
+            Logger.warn("Failed to connect to Unix socket: " + socketPath + " (" + e.getClass().getSimpleName() + ": " + e.getMessage() + ")");
             throw e;
         }
     }
