@@ -1,4 +1,4 @@
-# Code Awareness IntelliJ Plugin - Implementation Plan
+# Kawa Code IntelliJ Plugin - Implementation Plan
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-This document provides a detailed, phase-by-phase implementation plan for the Code Awareness IntelliJ plugin. The plan is structured into 5 phases over an estimated **12-18 development days**, with clear priorities, dependencies, and success criteria for each phase.
+This document provides a detailed, phase-by-phase implementation plan for the Kawa Code IntelliJ plugin. The plan is structured into 5 phases over an estimated **12-18 development days**, with clear priorities, dependencies, and success criteria for each phase.
 
 
 
@@ -116,7 +116,7 @@ src/main/java/com/codeawareness/intellij/CodeAwarenessApplicationService.java
 
 <id>com.codeawareness.intellij</id>
 
-<name>Code Awareness</name>
+<name>Kawa Code</name>
 
 <description>
 
@@ -734,7 +734,7 @@ src/main/java/com/codeawareness/intellij/actions/ConnectionStatusAction.java
 
 <actions>
 
-  <group id="CodeAwareness.Menu" text="Code Awareness" popup="true">
+  <group id="CodeAwareness.Menu" text="Kawa Code" popup="true">
 
     <action id="CodeAwareness.Refresh"
 
@@ -972,7 +972,7 @@ Testing, documentation, and preparation for distribution.
 
 - [ ] Manual testing on all platforms
 
-- [ ] Test with real Code Awareness backend
+- [ ] Test with real Kawa Code backend
 
 - [ ] Load testing (multiple projects, large files)
 
@@ -1538,7 +1538,7 @@ The following components can be directly ported from kawa.pycharm with only pack
 
 ### External Services
 
-- Code Awareness backend application (for testing)
+- Kawa Code backend application (for testing)
 
 
 
@@ -1858,7 +1858,7 @@ kawa.intellij/
 
 - [ ] Development environment set up
 
-- [ ] Access to Code Awareness backend for testing
+- [ ] Access to Kawa Code backend for testing
 
 
 
@@ -1918,7 +1918,7 @@ kawa.intellij/
 
 
 
-This implementation plan provides a clear, efficient roadmap for porting the Code Awareness plugin from PyCharm to IntelliJ IDEA. With ~95% code reuse from the proven kawa.pycharm implementation, this project has a very low risk profile and an estimated timeline of 12-18 days.
+This implementation plan provides a clear, efficient roadmap for porting the Kawa Code plugin from PyCharm to IntelliJ IDEA. With ~95% code reuse from the proven kawa.pycharm implementation, this project has a very low risk profile and an estimated timeline of 12-18 days.
 
 
 
@@ -1956,4 +1956,4 @@ This implementation plan provides a clear, efficient roadmap for porting the Cod
 
 **Last Updated:** November 17, 2025
 
-**Author:** Code Awareness Team
+**Author:** Kawa Code Team

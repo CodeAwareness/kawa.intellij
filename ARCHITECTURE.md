@@ -1,4 +1,4 @@
-# Code Awareness IntelliJ Plugin - Architecture Overview
+# Kawa Code IntelliJ Plugin - Architecture Overview
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-This document outlines the architecture for the **Code Awareness IntelliJ Plugin**, a JetBrains IDE extension that provides real-time team collaboration features. This plugin replicates the proven functionality of the existing Code Awareness extensions for Emacs, VS Code, and PyCharm, enabling IntelliJ IDEA users to see code intersections, conflicts, and overlaps with teammates before committing changes.
+This document outlines the architecture for the **Kawa Code IntelliJ Plugin**, a JetBrains IDE extension that provides real-time team collaboration features. This plugin replicates the proven functionality of the existing Kawa Code extensions for Emacs, VS Code, and PyCharm, enabling IntelliJ IDEA users to see code intersections, conflicts, and overlaps with teammates before committing changes.
 
 
 
@@ -20,7 +20,7 @@ This document outlines the architecture for the **Code Awareness IntelliJ Plugin
 
 - Low-noise visual indicators in the editor
 
-- Cross-platform socket-based communication with Code Awareness backend
+- Cross-platform socket-based communication with Kawa Code backend
 
 
 
@@ -36,7 +36,7 @@ This document outlines the architecture for the **Code Awareness IntelliJ Plugin
 
 
 
-The Code Awareness IntelliJ plugin enables developers to:
+The Kawa Code IntelliJ plugin enables developers to:
 
 - **Identify merge conflicts early** - See conflicts before pushing/committing
 
@@ -56,7 +56,7 @@ The Code Awareness IntelliJ plugin enables developers to:
 
 ┌─────────────────────────────────────────────────────────────────┐
 
-│                 IntelliJ Code Awareness Plugin                  │
+│                 IntelliJ Kawa Code Plugin                  │
 
 ├─────────────────────────────────────────────────────────────────┤
 
@@ -114,7 +114,7 @@ The Code Awareness IntelliJ plugin enables developers to:
 
 │  ┌────────────────────────────────────────────────────────────┐ │
 
-│  │         Code Awareness Backend Application                  │ │
+│  │         Kawa Code Backend Application                  │ │
 
 │  │  - Catalog Service (client discovery)                       │ │
 
@@ -144,7 +144,7 @@ The Code Awareness IntelliJ plugin enables developers to:
 
 **Responsibilities:**
 
-- Manage socket connections to Code Awareness backend
+- Manage socket connections to Kawa Code backend
 
 - Implement JSON message protocol with form-feed delimiters
 
@@ -544,7 +544,7 @@ DiffContent peerContent = DiffContentFactory.getInstance()
 
 SimpleDiffRequest request = new SimpleDiffRequest(
 
-    "Code Awareness: " + peerName,
+    "Kawa Code: " + peerName,
 
     localContent,
 
@@ -1034,7 +1034,7 @@ ApplicationManager.getApplication().executeOnPooledThread(() -> {
 
 **Test Plan:**
 
-- Connect to real Code Awareness backend
+- Connect to real Kawa Code backend
 
 - Select peer and verify highlights
 
@@ -1172,9 +1172,9 @@ dependencies {
 
   <id>com.codeawareness.intellij</id>
 
-  <name>Code Awareness</name>
+  <name>Kawa Code</name>
 
-  <vendor>Code Awareness Team</vendor>
+  <vendor>Kawa Code Team</vendor>
 
 
 
@@ -1254,7 +1254,7 @@ dependencies {
 
   <actions>
 
-    <group id="CodeAwareness.Menu" text="Code Awareness" popup="true">
+    <group id="CodeAwareness.Menu" text="Kawa Code" popup="true">
 
       <action id="CodeAwareness.Refresh"
 
@@ -1598,7 +1598,7 @@ src/main/java/com/codeawareness/intellij/
 
 
 
-### 15.2 Code Awareness Documentation
+### 15.2 Kawa Code Documentation
 
 
 
@@ -1608,7 +1608,7 @@ src/main/java/com/codeawareness/intellij/
 
 - kawa.vscode repository (alternative reference)
 
-- Code Awareness message protocol specification
+- Kawa Code message protocol specification
 
 
 
@@ -1620,7 +1620,7 @@ src/main/java/com/codeawareness/intellij/
 
 
 
-This architecture provides a solid foundation for the Code Awareness IntelliJ plugin, leveraging the proven design from the PyCharm implementation (which uses the same IntelliJ Platform) while extending support to IntelliJ IDEA's multi-language development environment. The modular design ensures maintainability, testability, and extensibility for future enhancements.
+This architecture provides a solid foundation for the Kawa Code IntelliJ plugin, leveraging the proven design from the PyCharm implementation (which uses the same IntelliJ Platform) while extending support to IntelliJ IDEA's multi-language development environment. The modular design ensures maintainability, testability, and extensibility for future enhancements.
 
 
 

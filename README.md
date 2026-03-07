@@ -1,13 +1,13 @@
-# Code Awareness extension for IntelliJ IDEA
+# Kawa Code extension for IntelliJ IDEA
 ====================================
 
 > Real-time team collaboration for IntelliJ IDEA developers
 
 ## Overview
 
-The **Code Awareness IntelliJ Plugin** brings real-time collaborative coding features to JetBrains IntelliJ IDEA, enabling developers to see code intersections, conflicts, and overlaps with teammates before committing changes.
+The **Kawa Code IntelliJ Plugin** brings real-time collaborative coding features to JetBrains IntelliJ IDEA, enabling developers to see code intersections, conflicts, and overlaps with teammates before committing changes.
 
-This plugin is part of the Code Awareness suite, which includes extensions for:
+This plugin is part of the Kawa Code suite, which includes extensions for:
 - **Emacs** ([kawa.emacs](https://github.com/CodeAwareness/kawa.emacs))
 - **Visual Studio Code** ([kawa.vscode](https://github.com/CodeAwareness/kawa.vscode))
 - **PyCharm** ([kawa.pycharm](https://github.com/CodeAwareness/kawa.pycharm))
@@ -48,7 +48,7 @@ This repository currently contains:
 
 The plugin is built on a **3-layer architecture**:
 
-1. **Communication Layer** - Socket-based IPC with Code Awareness backend
+1. **Communication Layer** - Socket-based IPC with Kawa Code backend
 2. **Event Handling System** - Message routing and event dispatch
 3. **UI Integration Layer** - Editor highlighting, status bar, diff viewer
 
@@ -62,7 +62,7 @@ The plugin is built on a **3-layer architecture**:
 
 ## Communication Protocol
 
-The plugin communicates with the Code Awareness backend using:
+The plugin communicates with the Kawa Code backend using:
 - **Transport:** Unix domain sockets (`~/.kawa-code/sockets/`) or Windows named pipes
 - **Format:** JSON messages with form-feed delimiters (`\f`)
 - **Flow:** Request/Response/Error patterns
@@ -122,10 +122,10 @@ The plugin is not yet available for installation. Check back soon for release up
 
 ## Related Projects
 
-- [kawa.pycharm](https://github.com/CodeAwareness/kawa.pycharm) - Code Awareness for PyCharm (reference implementation)
-- [kawa.emacs](https://github.com/CodeAwareness/kawa.emacs) - Code Awareness for Emacs
-- [kawa.vscode](https://github.com/CodeAwareness/kawa.vscode) - Code Awareness for VS Code
-- Code Awareness Backend - Core service (proprietary)
+- [kawa.pycharm](https://github.com/CodeAwareness/kawa.pycharm) - Kawa Code for PyCharm (reference implementation)
+- [kawa.emacs](https://github.com/CodeAwareness/kawa.emacs) - Kawa Code for Emacs
+- [kawa.vscode](https://github.com/CodeAwareness/kawa.vscode) - Kawa Code for VS Code
+- Kawa Code Backend - Core service (proprietary)
 
 ## Project Structure
 
@@ -199,7 +199,7 @@ kawa.intellij/
 
 ### Runtime Requirements
 - IntelliJ IDEA 2023.3+ (Community or Ultimate)
-- Code Awareness backend application
+- Kawa Code backend application
 - Java 17+ runtime
 
 ### Platform Support
@@ -235,7 +235,7 @@ For issues, questions, or feature requests:
 
 This implementation is based on the proven architecture from:
 - **kawa.pycharm** - Primary reference implementation for IntelliJ Platform
-- **kawa.emacs** - Original Code Awareness implementation
+- **kawa.emacs** - Original Kawa Code implementation
 - **kawa.vscode** - VS Code implementation
 
-Special thanks to the Code Awareness team and all contributors to the existing extensions.
+Special thanks to the Kawa Code team and all contributors to the existing extensions.
